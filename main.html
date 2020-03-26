@@ -2,12 +2,22 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vue App</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <title>Vue App</title>
-
     <body>
-        <div>
-            <h2>Cool Bean</h2>
-        </div>
+        <div id="app">
+            <h2>{{ product }}</h2>
+            <div class="product-image">
+                <img :src="image">
+            </div>
+            <div class="product-url">
+                <a :href="url" target="blank">
+                    Check it out
+                </a>
+            </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
